@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/background"
+android:fitsSystemWindows="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Instructions"
+            android:id="@+id/txtloginInstructions"
+            android:textColor="#cccccc"
+            android:fontFamily="fonts/Roboto-Bold.ttf"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="fonts/Roboto-Bold.ttf"
+            android:text="Use your email and password to login"
+            android:layout_marginTop="8dp"
+            android:textColor="#cccccc"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="EMAIL ADDRESS"
+            android:fontFamily="fonts/Roboto-Bold.ttf"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+
+            />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="fonts/Roboto-Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Your Email Address ?"
+            android:textColorHint="#70835C"
+            android:textColor="#8CC63E"
+            android:textCursorDrawable="@android:color/white"
+            android:background="@android:color/transparent"
+          />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="2dp"
+            android:fontFamily="fonts/Roboto-Bold.ttf"
+            android:text="seperator"
+            android:layout_marginTop="5dp"
+            android:background="#aaffffff"
+
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="fonts/Roboto-Bold.ttf"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Your Password ?"
+            android:textColorHint="#70835C"
+            android:fontFamily="fonts/Roboto-Bold.ttf"
+            android:textColor="#8CC63E"
+            android:textCursorDrawable="@android:color/white"
+            android:password="true"
+            android:background="@android:color/transparent"
+          />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="45dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_height="2dp"
+            android:text="seperator"
+            android:layout_marginTop="5dp"
+            android:background="#aaffffff"/>
+
+        <Button
+            android:id="@+id/btnSingIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:fontFamily="fonts/Roboto-Bold.ttf"
+            android:text="Sign In"
+            android:textColor="#ffffff"
+            android:background="@drawable/button"
+            android:textAllCaps="false"
+
+            />
+<Button
+    android:layout_width="match_parent"
+    android:layout_margin="-5dp"
+    android:layout_height="24dp"
+    android:text="Forgot Password ?"
+    android:textColor="@android:color/white"
+    android:background="@android:color/background_dark"
+    android:fontFamily="fonts/Roboto-Bold.ttf"
+    />
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Or Sign In"
+                android:textColor="#6aa41C"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tvText"
+                android:background="#6aa41C"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvText"
+                android:background="#6aa41C"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+    android:gravity="center"
+
+        >
+        <RelativeLayout
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="center"
+            android:background="@drawable/buttton_facebook"
+
+            >
+            <ImageView
+                android:src="@mipmap/fb_icon"
+                android:padding="10dp"
+              android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+            <Button
+                android:id="@+id/btnFaceBookSingIn"
+                android:layout_width="150dp"
+
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+
+                android:text="          Facebook"
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent"
+
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_twitter"
+
+            >
+            <ImageView
+                android:src="@mipmap/tw_icon"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+            <Button
+                android:id="@+id/btnTwitterSingIn"
+                android:layout_width="140dp"
+
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+
+                android:text="        Twitter"
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent"
+
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Or Sign In"
+                android:textColor="#6aa41C"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tvText"
+                android:background="#6aa41C"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvText"
+                android:background="#6aa41C"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+        <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:fontFamily="fonts/Roboto-Bold.ttf"
+        android:text="Create An Free Account"
+        android:textColor="#ffffff"
+        android:background="#54575C"
+        android:textAllCaps="false"
+
+        />
+
+    </LinearLayout>
+</ScrollView>

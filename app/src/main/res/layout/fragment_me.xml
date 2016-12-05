@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/fb_icon"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#FFFFFFFF"
+                android:paddingLeft="20dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:id="@+id/Notificationlayout"
+                android:layout_gravity="center"
+
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_toEndOf="@+id/profile_image">
+                <ImageView
+                    android:src="@mipmap/xs_notification"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    />
+                <Button
+                    android:id="@+id/btnNotifications"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:text="          Notification"
+                    android:textColor="#ffffff"
+                    android:background="@android:color/transparent"
+                   />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/Notificationlayout"
+                android:layout_toEndOf="@+id/Notificationlayout">
+                <ImageView
+                    android:src="@mipmap/xs_setting"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    />
+                <Button
+                    android:id="@+id/btnsettings"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:text="         Settings"
+                    android:textColor="#ffffff"
+                    android:background="@android:color/transparent"
+
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:text="JIM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Notificationlayout"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_toEndOf="@+id/profile_image"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:id="@+id/lblprofileid"
+                android:textColor="@android:color/holo_green_dark" />
+
+            <TextView
+                android:text="email@mail.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/lblprofileid"
+                android:layout_alignStart="@+id/lblprofileid"
+               
+                android:id="@+id/lblemail"
+                android:textColor="@color/cardview_light_background" />
+            
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/selectactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Select Activity"
+            android:textColor="#6aa41C"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/selectactivity"
+            android:background="#6aa41C"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/selectactivity"
+            android:background="#6aa41C"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+  <!-- sesson two starts here -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@mipmap/walking_disable"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:id="@+id/lblwalking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:text="16"
+                android:textColor="#6aa41C"/>
+            <TextView
+                android:id="@+id/lblwalkingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Walking"
+                android:textColor="#8f9094"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@mipmap/running_disable"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:id="@+id/lblrunning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:text="1"
+                android:textColor="#6aa41C"/>
+            <TextView
+                android:id="@+id/lblRunningTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Running"
+                android:textColor="#8f9094"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@mipmap/cycling_disable"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:id="@+id/lblCyclying"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:text="9"
+                android:textColor="#6aa41C"/>
+            <TextView
+                android:id="@+id/lblCyclyingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Cyclying"
+                android:textColor="#8f9094"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/bus_disable"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+            <TextView
+                android:id="@+id/lblMetro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:text="4"
+                android:textColor="#6aa41C"/>
+            <TextView
+                android:id="@+id/lblMeteroTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Metero"
+                android:textColor="#8f9094"/>
+        </LinearLayout>
+
+    </LinearLayout>>
+    <!-- Session two ends here -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="#6aa41C"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+<!-- Session three starts here -->
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:src="@mipmap/footsteps"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+        <TextView
+            android:id="@+id/lblfootsteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:text="845.."
+            android:textColor="#6aa41C"/>
+        <TextView
+            android:id="@+id/lblfootstepsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Footsteps"
+            android:textColor="#8f9094"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@mipmap/distance"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="87dp"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            android:id="@+id/lbldistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:text="55.74"
+            android:textColor="#6aa41C"/>
+        <TextView
+            android:id="@+id/lbldistanceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Distance in KM"
+            android:textColor="#8f9094"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>>
+<!-- Session three ends here -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="#6aa41C"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Session four starts here -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblAActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:text="Activities"
+            android:textColor="#6aa41C"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/activeimg"
+            android:src="@mipmap/list_activities"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activelinearlayout"
+            android:layout_toRightOf="@+id/activeimg"
+            android:layout_toEndOf="@+id/activeimg"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/lblAActcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:text="30"
+            android:textColor="#f9fff1"/>
+
+            <TextView
+                android:id="@+id/lbltotActivites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:text="Total Activities"
+                android:textColor="#f9fff1"/>
+        </LinearLayout>
+
+        <ImageView
+            android:src="@mipmap/arrow_description"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom|right"
+            android:id="@+id/imageView2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+    </LinearLayout>
+    <!-- Session four ends here -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="#6aa41C"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+<!-- Session Five starts here -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblReports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:text="Reports"
+            android:textColor="#6aa41C"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/Reportimage"
+                android:src="@mipmap/list_reports"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reportlinearlayout"
+                android:layout_toRightOf="@+id/Reportimage"
+                android:layout_toEndOf="@+id/Reportimage"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/lblActivitesreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"
+                    android:text="Activity Reports"
+                    android:textColor="#f9fff1"/>
+
+                <TextView
+                    android:id="@+id/lbltoReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"
+                    android:text="Monthly,Weekly and selected days reports"
+                    android:textColor="#f9fff1"/>
+            </LinearLayout>
+
+            <ImageView
+                android:src="@mipmap/arrow_description"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom|right"
+                android:id="@+id/arrow2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- Session five ends here -->
+</LinearLayout>
+</ScrollView>
